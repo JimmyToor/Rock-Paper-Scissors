@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.GameFragment">
+
+    <com.github.andreilisun.circular_layout.CircularLayout
+        android:id="@+id/circular_layout"
+        android:layout_width="359dp"
+        android:layout_height="359dp"
+        android:layout_gravity="center">
+
+    </com.github.andreilisun.circular_layout.CircularLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:text="@string/start" />
+
+    <TextView
+        android:id="@+id/winner_text"
+        android:layout_width="157dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center_horizontal|top"
+        android:gravity="center"
+        android:textSize="20sp"
+        tools:text="@string/display_winner" />
+
+    <Spinner
+        android:id="@+id/strategy_spinner"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/explain_text"
+        android:layout_width="157dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="74dp"
+        android:gravity="center"
+        tools:text="weapon1 beats weapon2"/>
+
+</FrameLayout>

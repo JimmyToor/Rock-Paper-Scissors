@@ -1,2 +1,2 @@
-# Rock Paper Scissors
- Simple RPS game with easily extensible weapon pool
+# RockPaperScissors
+A simple Rock Paper Scissors game to practice Android development
