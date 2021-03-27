@@ -3,15 +3,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.main.GameFragment">
 
-    <com.github.andreilisun.circular_layout.CircularLayout
-        android:id="@+id/circular_layout"
-        android:layout_width="359dp"
-        android:layout_height="359dp"
-        android:layout_gravity="center">
 
-    </com.github.andreilisun.circular_layout.CircularLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/winner_text"
+            android:layout_width="154dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginStart="127dp"
+            android:layout_marginEnd="127dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/display_winner" />
+
+        <TextView
+            android:id="@+id/explain_text"
+            android:layout_width="173dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginStart="128dp"
+            android:layout_marginEnd="127dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/winner_text"
+            tools:text="weapon1 beats weapon2" />
+
+        <com.github.andreilisun.circular_layout.CircularLayout
+            android:id="@+id/circular_layout"
+            android:layout_width="411dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/explain_text">
+
+        </com.github.andreilisun.circular_layout.CircularLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
         android:id="@+id/button2"
@@ -20,29 +59,11 @@
         android:layout_gravity="bottom|center"
         android:text="@string/start" />
 
-    <TextView
-        android:id="@+id/winner_text"
-        android:layout_width="157dp"
-        android:layout_height="74dp"
-        android:layout_gravity="center_horizontal|top"
-        android:gravity="center"
-        android:textSize="20sp"
-        tools:text="@string/display_winner" />
-
     <Spinner
         android:id="@+id/strategy_spinner"
         android:layout_width="148dp"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginBottom="10dp" />
-
-    <TextView
-        android:id="@+id/explain_text"
-        android:layout_width="157dp"
-        android:layout_height="53dp"
-        android:layout_gravity="center_horizontal|top"
-        android:layout_marginTop="74dp"
-        android:gravity="center"
-        tools:text="weapon1 beats weapon2"/>
 
 </FrameLayout>
