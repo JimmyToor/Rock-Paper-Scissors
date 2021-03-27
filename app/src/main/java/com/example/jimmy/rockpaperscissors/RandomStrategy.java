@@ -4,8 +4,9 @@ import java.util.Random;
 
 // Randomly decides the next choice
 public class RandomStrategy implements WeaponStrategy {
-    public int choose() {
+    public RandomStrategy(){}
+    public Weapon choose(Match match) {
         Random result = new Random();
-        return result.nextInt(Player.MAX_HANDS);
+        return match.getWeapons().get(result.nextInt(Player.MAX_HANDS));
     }
 }

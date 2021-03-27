@@ -3,6 +3,11 @@
   <component name="WizardSettings">
     <option name="children">
       <map>
+        <entry key="imageWizard">
+          <value>
+            <PersistentState />
+          </value>
+        </entry>
         <entry key="vectorWizard">
           <value>
             <PersistentState>
@@ -30,8 +35,8 @@
                           <map>
                             <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="0c868b" />
-                            <entry key="outputName" value="ic_spock" />
-                            <entry key="sourceFile" value="M:\Downloads\noun_spock_88664.svg" />
+                            <entry key="outputName" value="ic_noun_edit" />
+                            <entry key="sourceFile" value="M:\Downloads\noun_edit_1528992.svg" />
                           </map>
                         </option>
                       </PersistentState>

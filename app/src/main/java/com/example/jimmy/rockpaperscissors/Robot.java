@@ -31,9 +31,8 @@ public class Robot extends Player {
         this.weaponStrategy = weaponStrategy;
     }
 
-    public void makeChoice()
+    public void makeChoice(Match match)
     {
-        int choice = weaponStrategy.choose();
-        setChoice(choice);
+        setWeapon(weaponStrategy.choose(match));
     }
 }

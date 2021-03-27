@@ -4,7 +4,8 @@
     android:id="@+id/weapon_text"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:textColor="@color/colorAccent"
-    android:textSize="22sp"
+    android:padding="5dp"
+    android:textColor="@color/colorPrimary"
+    android:textSize="20sp"
     android:textStyle="bold"
     app:drawableBottomCompat="@drawable/ic_rock" />
